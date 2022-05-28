@@ -1,0 +1,41 @@
+//Colors
+$first-color: rgba();
+$first-color-dark: rgba();
+$first-color-light: rgba();
+$first-color-lighten: rgba();
+
+$second-color: rgba();
+$second-color-dark: rgba();
+$second-color-light: rgba();
+$second-color-lighten: rgba();
+
+$title-color: rgba();
+$text-color: rgba();
+$text-color-light: rgba();
+$border-color: rgba();
+$body-color: rgba();
+$container-color: rgba();
+
+//font and typography
+$body-font: 'Poppins', sans-serif;
+$biggest-font-size: 2.25rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1rem;
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+$smaller-font-size: .75rem;
+
+$medium-font: 500;
+$semi-bold-font: 600;
+
+//responsive typography
+@media screen and (min-width: 1024px) {
+  $biggest-font-size: 4rem;
+  $h1-font-size: 2.25rem;
+  $h2-font-size: 1.5rem;
+  $h3-font-size: 1.25rem;
+  $normal-font-size: 1rem;
+  $small-font-size: .875rem;
+  $smaller-font-size: .813rem;
+}

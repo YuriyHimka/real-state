@@ -1,0 +1,22 @@
+/* Error: Missing argument $channels.
+ *   ,--> _variables.scss
+ * 2 | $first-color: rgba();
+ *   |               ^^^^^^ invocation
+ *   '
+ *   ,
+ * 1 | @function rgba($channels) {
+ *   |           =============== declaration
+ *   '
+ *   _variables.scss 2:15  @import
+ *   main.scss 3:9         root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $channels.\a   \250c \2500 \2500 > _variables.scss\a 2 \2502  $first-color: rgba();\a   \2502                ^^^^^^ invocation\a   \2575 \a   \2577 \a 1 \2502  @function rgba($channels) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   _variables.scss 2:15  @import\a   main.scss 3:9         root stylesheet";
+}
