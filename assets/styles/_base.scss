@@ -15,7 +15,7 @@ body {
   font-size: $normal-font-size;
   background-color: $body-color;
   color: $text-color;
-  transition: .4s;
+  transition: $slow-anim;
 }
 
 h1, h2, h3 {

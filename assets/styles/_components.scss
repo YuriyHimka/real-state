@@ -10,10 +10,6 @@
   display: grid;
 }
 
-.flex {
-  display: flex;
-}
-
 .section {
   padding: 4.5rem 0 2rem;
 }
@@ -21,10 +17,10 @@
 .section__title {
   font-size: $h2-font-size;
   margin-bottom: 1rem;
-}
 
-.section__title span {
-  color: $second-color;
+  span {
+    color: $second-color;
+  }
 }
 
 .section__subtitle {

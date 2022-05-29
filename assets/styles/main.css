@@ -1,22 +1,193 @@
-/* Error: Missing argument $channels.
- *   ,--> _variables.scss
- * 2 | $first-color: rgba();
- *   |               ^^^^^^ invocation
- *   '
- *   ,
- * 1 | @function rgba($channels) {
- *   |           =============== declaration
- *   '
- *   _variables.scss 2:15  @import
- *   main.scss 3:9         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Missing argument $channels.\a   \250c \2500 \2500 > _variables.scss\a 2 \2502  $first-color: rgba();\a   \2502                ^^^^^^ invocation\a   \2575 \a   \2577 \a 1 \2502  @function rgba($channels) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   _variables.scss 2:15  @import\a   main.scss 3:9         root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: #fff;
+  color: #57606f;
+  transition: 0.4s;
+}
+
+h1, h2, h3 {
+  color: #060a44;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+}
+
+.container {
+  max-width: 1024px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.section__title span {
+  color: #ffa502;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: 0.813rem;
+  color: #ffa502;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.nav {
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav__logo i {
+  font-size: 1rem;
+}
+.nav__logo:hover {
+  color: #3742fa;
+}
+
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    bottom: 2rem;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(47, 53, 66, 0.2);
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 1.3rem 3rem;
+    border-radius: 1.25rem;
+    transition: 0.4s;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__link {
+    color: #57606f;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+  .nav__link i {
+    font-size: 1.25rem;
+  }
+  .nav__link span {
+    display: none;
+  }
+}
+.home {
+  background: linear-gradient(170deg, #383838 0%, #0f0f0f 30%);
+  padding-bottom: 0;
+}
+
+.home__container {
+  padding-top: 4rem;
+  row-gap: 3.5rem;
+}
+
+.home__title,
+.home__value-number {
+  color: #fff;
+}
+
+home__title {
+  font-size: 2.25rem;
+  line-height: 120%;
+  margin-bottom: 1.25rem;
+}
+
+.home__description {
+  color: #a4b0be;
+  margin-bottom: 2rem;
+}
+
+.home__search {
+  background-color: #fff;
+  padding: 0.35rem 0.35rem 0.35rem 0.75rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.75rem;
+  border: 3px solid #a4b0be;
+  margin-bottom: 2rem;
+}
+.home__search i {
+  font-size: 1.25rem;
+  color: #3742fa;
+}
+
+.home__search-input {
+  width: 90%;
+  background-color: #fff;
+  color: #57606f;
+  margin: 0 0.5rem;
+}
+.home__search-input::placeholder {
+  color: #a4b0be;
+}
+
+/*# sourceMappingURL=main.css.map */

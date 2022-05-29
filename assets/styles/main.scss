@@ -4,3 +4,130 @@
 @import "base";
 @import "components";
 
+//header
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: $z-fixed;
+  transition: $slow-anim;
+}
+
+.nav {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+  font-weight: $medium-font;
+  transition: $fast-anim;
+
+  i {
+    font-size: 1rem;
+  }
+
+  &:hover {
+    color: $first-color;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    bottom: 2rem;
+    background-color: $container-color;
+    box-shadow: 0 8px 24px $shadow-color;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 1.3rem 3rem;
+    border-radius: 1.25rem;
+    transition: $slow-anim;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__link {
+    color: $text-color;
+    display: flex;
+    padding: .5rem;
+    border-radius: 50%;
+
+    i {
+      font-size: 1.25rem;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
+
+
+//Home__Viewport
+.home {
+  background: linear-gradient(170deg,
+              hsl(0, 0%, 22%) 0%,
+              hsl(0, 0%, 6%) 30%);
+  padding-bottom: 0;
+}
+
+.home__container {
+  padding-top: 4rem;
+  row-gap: 3.5rem;
+}
+
+.home__title,
+.home__value-number {
+  color: #fff;
+}
+
+home__title {
+  font-size: $biggest-font-size;
+  line-height: 120%;
+  margin-bottom: 1.25rem;
+}
+
+.home__description {
+  color: $text-color-light;
+  margin-bottom: 2rem;
+}
+
+.home__search {
+  background-color: $body-color;
+  padding: .35rem .35rem .35rem .75rem;
+  display: flex;
+  align-items: center;
+  border-radius: .75rem;
+  border: 3px solid $text-color-light;
+  margin-bottom: 2rem;
+
+  i {
+    font-size: 1.25rem;
+    color: $first-color;
+  }
+}
+
+.home__search-input {
+  width: 90%;
+  background-color: $body-color;
+  color: $text-color;
+  margin: 0 .5rem;
+
+  &::placeholder {
+    color: $text-color-light;
+  }
+}
