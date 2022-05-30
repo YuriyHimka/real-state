@@ -76,6 +76,15 @@
   }
 }
 
+.scroll-header {
+  background-color: $body-color;
+  box-shadow: 0 1px 4px hsla(228, 4%, 15%, .1);
+
+  .nav__logo {
+    color: $first-color;
+  }
+}
+
 
 //Home__Viewport
 .home {
@@ -95,7 +104,7 @@
   color: #fff;
 }
 
-home__title {
+.home__title {
   font-size: $biggest-font-size;
   line-height: 120%;
   margin-bottom: 1.25rem;
@@ -130,4 +139,51 @@ home__title {
   &::placeholder {
     color: $text-color-light;
   }
+}
+
+.home__value {
+  display: flex;
+  column-gap: 2.5rem;
+}
+
+.home__value-number {
+  font-size: $h1-font-size;
+  font-weight: $medium-font;
+
+  span {
+    color: $second-color;
+  }
+}
+
+.home__value-description {
+  display: flex;
+  color: $text-color-light;
+  font-size: $smaller-font-size;
+}
+
+.home__images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.home__orb {
+  width: 265px;
+  height: 284px;
+  background: linear-gradient(180deg,
+              hsl(0, 0%, 16%) 93%,
+              hsl(0, 0%, 67%) 100%);
+  border-radius: 135px 135px 0 0;
+}
+
+.home__img {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 125px 125px 12px 12px;
+  display: inline-flex;
+  align-items: flex-end;
+  bottom: -1.5rem;
+  box-shadow: 0 16px 32px $shadow-color;
 }

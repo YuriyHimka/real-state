@@ -74,6 +74,28 @@ button {
   overflow: hidden;
 }
 
+.button {
+  display: inline-block;
+  background: #3742fa;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 0.5rem;
+  font-size: 0.938rem;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(39, 69, 190, 0.25);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.button:hover {
+  background: #616aff;
+  box-shadow: 0 4px 12px rgba(39, 69, 190, 0.25);
+  transition: 0.3s;
+}
+
+.nav__button {
+  display: none;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -140,6 +162,14 @@ button {
     display: none;
   }
 }
+.scroll-header {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(37, 37, 40, 0.1);
+}
+.scroll-header .nav__logo {
+  color: #3742fa;
+}
+
 .home {
   background: linear-gradient(170deg, #383838 0%, #0f0f0f 30%);
   padding-bottom: 0;
@@ -155,7 +185,7 @@ button {
   color: #fff;
 }
 
-home__title {
+.home__title {
   font-size: 2.25rem;
   line-height: 120%;
   margin-bottom: 1.25rem;
@@ -188,6 +218,50 @@ home__title {
 }
 .home__search-input::placeholder {
   color: #a4b0be;
+}
+
+.home__value {
+  display: flex;
+  column-gap: 2.5rem;
+}
+
+.home__value-number {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.home__value-number span {
+  color: #ffa502;
+}
+
+.home__value-description {
+  display: flex;
+  color: #a4b0be;
+  font-size: 0.75rem;
+}
+
+.home__images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.home__orb {
+  width: 265px;
+  height: 284px;
+  background: linear-gradient(180deg, #292929 93%, #ababab 100%);
+  border-radius: 135px 135px 0 0;
+}
+
+.home__img {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 125px 125px 12px 12px;
+  display: inline-flex;
+  align-items: flex-end;
+  bottom: -1.5rem;
+  box-shadow: 0 16px 32px rgba(47, 53, 66, 0.2);
 }
 
 /*# sourceMappingURL=main.css.map */
